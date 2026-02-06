@@ -83,10 +83,7 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
   <strong>Providing coding agents with <a href="#codehealth">CodeHealth</a> via an MCP server gives them a clear quality-oriented direction.</strong>
 </div>
 
-<p style="margin-top: 1.5em;">
-  The value of using CodeHealth as a compass also **generalizes to C++ and Java**, supported by large-scale experiments with a self-hosted coding agent and medium-sized LLMs.
-  <a href="/compass/multilang.html">Learn more.</a>
-</p>
+The value of using CodeHealth as a compass also **generalizes to C++ and Java**, supported by large-scale experiments with a self-hosted coding agent and medium-sized LLMs. [Learn more.](multilang.html)
 
 ---
 
