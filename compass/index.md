@@ -100,7 +100,7 @@ Across multiple peer-reviewed studies, we show that higher CodeHealth is associa
 - **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders [[3]](#ref-techdebt24)
 - **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index** [[1]](#ref-icsme24)
 
-In a hybrid future where code is co-developed by both humans and AI, CodeHealth provides **guardrails for agents** and **preserves program comprehension** when human oversight is needed.
+In a hybrid future where code is co-developed by both humans and AI, CodeHealth provides **guardrails for agents** and **preserves human program comprehension** when  oversight is needed.
 
 ---
 
