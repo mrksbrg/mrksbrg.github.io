@@ -9,7 +9,13 @@ title: COMPASS
 <a href="https://codescene.com/">CodeScene</a> research direction maintained by <a href="https://mrksbrg.com/">Dr. Markus Borg</a>
 </span>
 
-**Thesis:** Healthy code has never been more important than in the AI era. First, healthy code is more AI-friendly. Second, as the volume of code increases, we must make it easy for humans to read - in the foreseeable future, this will still be needed. CodeHealth can act as a compass for humans and code alike to ensure the code is maintainable.
+**Thesis:** High-quality code has never been more important than in the AI era.
+
+**First,** healthy code is more AI-friendly: it is easier for coding agents to analyze, modify, and extend without introducing unintended side effects.
+
+**Second,** as the volume of code grows, human readability becomes increasingly critical. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- precisely when it matters most.
+
+CodeHealth acts as a compass for both humans and coding agents, helping ensure that code remains maintainable over time.
 
 ---
 
@@ -19,8 +25,7 @@ CodeHealth is a code quality metric that aligns with how engineers perceive main
 - **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion**  
   ([TechDebt 2022, arXiv preprint])
 - **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders  
-  🏆 *Best Paper Award, TechDebt 2024*  
-  ([TechDebt 2024, arXiv preprint])
+  🏆 *Best Paper Award*  ([TechDebt 2024, arXiv preprint])
 - **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index**  
   ([ICSME 2024, arXiv preprint])
 
