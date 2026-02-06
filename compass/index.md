@@ -101,6 +101,35 @@ CodeHealth is a code quality metric that aligns with how engineers perceive main
 
 ## References
 
+<div class="references">
+  <ol>
+    <li>
+      Borg, Ezzouhri, and Tornhill.
+      <em>Ghost Echoes Revealed: Benchmarking Maintainability Metrics and Machine Learning Predictions Against Human Assessments.</em>
+      In Proc. of the 40th Int’l. Conf. on Software Maintenance and Evolution (ICSME), 2024.
+      <a href="https://arxiv.org/pdf/2408.10754">arXiv</a>
+    </li>
+    <li>
+      Borg, Hagatulah, Tornhill, and Söderberg.
+      <em>Code for Machines, Not Just Humans: Quantifying AI-Friendliness with Code Health Metrics.</em>
+      In Proc. of the 3rd ACM Int’l. Conf. on AI Foundation Models and Software Engineering (FORGE), 2026.
+      <a href="https://arxiv.org/abs/2601.02200">arXiv</a>
+    </li>
+    <li>
+      Borg, Pruvost, Mones, and Tornhill.
+      <em>Increasing, not Diminishing: Investigating the Returns of Highly Maintainable Code.</em>
+      In Proc. of the 7th Int’l. Conf. on Technical Debt, pp. 21–30, 2024.
+      <a href="https://arxiv.org/pdf/2401.13407">arXiv</a>
+    </li>
+    <li>
+      Tornhill and Borg.
+      <em>Code Red: The Business Impact of Code Quality – A Quantitative Study of 39 Proprietary Production Codebases.</em>
+      In Proc. of the 5th Int’l. Conf. on Technical Debt, pp. 11–20, 2022.
+      <a href="https://arxiv.org/pdf/2203.04374">arXiv</a>
+    </li>
+  </ol>
+</div>
+
 
 ---
 
