@@ -35,11 +35,16 @@ CodeHealth is a code quality metric that aligns with how engineers perceive main
 
 ---
 
-## Why code quality matters for coding agents
+## Why code quality is a prerequisite for successful agent deployment
 
-Higher CodeHealth decreases AI risk.
+We study refactoring success as a proxy for how effectively AI systems can work with code of varying quality. Across our experiments, LLMs consistently perform better when operating on healthier code.
 
-- Figures
+The figure below was an early signal that motivated us to explore this relationship more systematically.
+
+![LLM refactoring success vs. CodeHealth](llm-friendliness_vs_codehealth.png)
+
+*Refactoring success as a function of CodeHealth. Higher CodeHealth is associated with higher success rates for LLM-based refactoring.*
+
 
 ---
 
