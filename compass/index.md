@@ -80,7 +80,7 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
 - **Most files improve substantially**: more than 90% reach a human- and AI-friendly state, compared to 24.1% without CodeHealth guidance.
 
 <div class="callout">
-  <strong>Giving coding agents access to CodeHealth through an MCP server gives them the quality orientation they need.</strong>
+  <strong>Providing coding agents with <a href="#codehealth">CodeHealth</a> via an MCP server gives them a clear quality-oriented direction.</strong>
 </div>
 
 ---
@@ -88,12 +88,9 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
 ## <a id="codehealth"></a>What is CodeHealth™?
 
 CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. CodeHealth is a score between 1 and 10 where the top score represents files without code smells. Files with a CodeHealth of 9 or higher are considered healthy. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
-- **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion**  
-  [[5]](#ref-techdebt22)
-- **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders  
-  🏆 *Best Paper Award*  [[3]](#ref-techdebt24)
-- **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index**  
-  [[1]](#ref-icsme24)
+- **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion** [[5]](#ref-techdebt22)
+- **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders 🏆 *Best Paper Award*  [[3]](#ref-techdebt24)
+- **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index** [[1]](#ref-icsme24)
 
 ## References
 
