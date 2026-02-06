@@ -21,20 +21,31 @@ title: CodeHealth and Coding Agents
 
 ---
 
-## Why code quality is a prerequisite for successful agent deployment
+## Code quality is a prerequisite for successful agent deployment
 
-We study refactoring success as a proxy for how effectively AI systems can work with code of varying quality. Across our experiments, LLMs consistently perform better when operating on healthier code.
+We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality ([FORGE 2026, arXiv preprint]). Across our experiments, large language models consistently perform better when operating on healthier code.
 
-The figure below was an early signal that motivated us to explore this relationship more systematically.
+The figure below shows test pass rates as a function of CodeHealth when LLMs are prompted to *improve maintainability in Python files*. For reference, Claude Code pinned to Sonnet 4.5 is shown alongside other models (brown curve). The color of each data point indicates the fraction of refactorings that removed at least one code smell, conditional on passing tests.
 
 ![LLM refactoring success vs. CodeHealth](llm-friendliness_vs_codehealth.png)
 
-*Refactoring success as a function of CodeHealth. Higher CodeHealth is associated with higher success rates for LLM-based refactoring.*
+### Takeaways
 
+- **Higher CodeHealth decreases refactoring risk** across all evaluated models.
+- **The trend is consistent across model classes**, from medium-sized open models to state-of-the-art Sonnet 4.5.
+- **As CodeHealth increases, LLMs identify fewer code smells to remove**, reflecting a shift toward more cosmetic changes.
+- **Claude exhibits the most conservative behavior**: the lighter blue markers reveal that many test-passing refactorings involve limited structural change (reported in related work ([MSR 2026, arXiv PDF]))
+
+<div class="callout">
+  <strong>A healthy codebase substantially increases the likelihood of succesful coding agent deployment.</strong>
+</div>
+
+[FORGE 2026, arXiv preprint]: https://arxiv.org/abs/2601.02200
+[MSR 2026, arXiv PDF]: https://arxiv.org/pdf/2601.20160
 
 ---
 
-## What coding agents can do with CodeHealth guidance
+## Coding agents need CodeHealth guidance
 
 Giving agents access to CodeHealth using the MCP makes wonders.
 
