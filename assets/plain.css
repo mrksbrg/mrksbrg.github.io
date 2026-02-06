@@ -1,0 +1,5 @@
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* pick one accent that feels CodeScene-ish */
+a { color: #2F6FED; } /* example: calm blue */
