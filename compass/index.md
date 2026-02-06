@@ -3,11 +3,13 @@ layout: plain
 title: COMPASS
 ---
 
-# COMPASS
+# CodeHealth as a prerequisite and compass for coding agents
 
-<span style="font-size: 0.9em; opacity: 0.75;">
-CodeScene research direction · <a href="https://codescene.com/">codescene.com</a>
+<span style="font-size: 0.85em; opacity: 0.7;">
+CodeScene research direction · <a href="https://codescene.com/">codescene.com</a><br/>
+Maintained by <a href="https://mrksbrg.com/">Dr. Markus Borg</a>
 </span>
+
 
 **Thesis:** Healthy code has never been more important than in the AI era. First, healthy code is more AI-friendly. Second, as the volume of code increases, we must make it easy for humans to read - in the foreseeable future, this will still be needed. CodeHealth can act as a compass for humans and code alike to ensure the code is maintainable.
 
