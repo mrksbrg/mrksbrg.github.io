@@ -15,23 +15,7 @@ title: COMPASS
 
 **Second,** as the volume of code grows, human readability becomes increasingly critical. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- precisely when it matters most.
 
-CodeHealth acts as a compass for both humans and coding agents, helping ensure that code remains maintainable over time.
-
----
-
-## What is CodeHealth™?
-
-CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
-- **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion**  
-  ([TechDebt 2022, arXiv preprint])
-- **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders  
-  🏆 *Best Paper Award*  ([TechDebt 2024, arXiv preprint])
-- **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index**  
-  ([ICSME 2024, arXiv preprint])
-
-[TechDebt 2022, arXiv preprint]: https://arxiv.org/abs/2203.04374
-[TechDebt 2024, arXiv preprint]: https://arxiv.org/abs/2401.13407
-[ICSME 2024, arXiv preprint]: https://arxiv.org/abs/2408.10754v1
+[CodeHealth](#codehealth) acts as a compass for both humans and coding agents, helping ensure that code remains maintainable over time.
 
 ---
 
@@ -56,6 +40,22 @@ Giving agents access to CodeHealth using the MCP makes wonders.
 
 ---
 
+## <a id="codehealth"></a>What is CodeHealth™?
+
+CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
+- **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion**  
+  ([TechDebt 2022, arXiv preprint])
+- **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders  
+  🏆 *Best Paper Award*  ([TechDebt 2024, arXiv preprint])
+- **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index**  
+  ([ICSME 2024, arXiv preprint])
+
+[TechDebt 2022, arXiv preprint]: https://arxiv.org/abs/2203.04374
+[TechDebt 2024, arXiv preprint]: https://arxiv.org/abs/2401.13407
+[ICSME 2024, arXiv preprint]: https://arxiv.org/abs/2408.10754v1
+
+---
+
 <div style="margin-top: 3em; font-size: 0.85em; opacity: 0.7;">
   This research was conducted at CodeScene and Lund University with support from Vinnova, Sweden’s Innovation Agency.
   <br/><br/>
@@ -64,20 +64,20 @@ Giving agents access to CodeHealth using the MCP makes wonders.
     <a href="https://codescene.com/" target="_blank" rel="noopener">
       <img src="/assets/img/codescene.png"
            alt="CodeScene logo"
-           style="height: 60px; vertical-align: middle; margin-right: 16px;">
+           style="height: 42px; vertical-align: middle; margin-right: 16px;">
     </a>
 
     <a href="https://www.lu.se/" target="_blank" rel="noopener">
       <img src="/assets/img/unilund.png"
            alt="Lund University logo"
-           style="height: 60px; vertical-align: middle; margin-right: 16px;">
+           style="height: 42px; vertical-align: middle; margin-right: 16px;">
     </a>
 
     <a href="https://www.vinnova.se/en/p/codehealth-as-the-true-north-for-coding-agents/"
        target="_blank" rel="noopener">
       <img src="/assets/img/vinnova.svg"
            alt="Vinnova logo"
-           style="height: 60px; vertical-align: middle;">
+           style="height: 42px; vertical-align: middle;">
     </a>
   </div>
 </div>
