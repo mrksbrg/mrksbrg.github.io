@@ -51,17 +51,29 @@ Giving agents access to CodeHealth using the MCP makes wonders.
 
 ---
 
-<div style="font-size: 0.85em; opacity: 0.7;">
-  This research was conducted at CodeScene and supported by Vinnova, Sweden’s Innovation Agency.
+<div style="margin-top: 3em; font-size: 0.85em; opacity: 0.7;">
+  This research was conducted at CodeScene and Lund University with support from Vinnova, Sweden’s Innovation Agency.
   <br/><br/>
 
-  <a href="https://codescene.com/">
-    <img src="/assets/img/codescene.png"
-         alt="CodeScene logo"
-         style="height: 28px; vertical-align: middle; margin-right: 16px;">
-  </a>
+  <div style="text-align: center;">
+    <a href="https://codescene.com/" target="_blank" rel="noopener">
+      <img src="/assets/img/codescene.png"
+           alt="CodeScene logo"
+           style="height: 28px; vertical-align: middle; margin-right: 16px;">
+    </a>
 
-  <img src="/assets/img/vinnova.svg"
-       alt="Vinnova logo"
-       style="height: 28px; vertical-align: middle;">
+    <a href="https://www.lu.se/" target="_blank" rel="noopener">
+      <img src="/assets/img/unilund.png"
+           alt="Lund University logo"
+           style="height: 28px; vertical-align: middle; margin-right: 16px;">
+    </a>
+
+    <a href="https://www.vinnova.se/en/p/codehealth-as-the-true-north-for-coding-agents/"
+       target="_blank" rel="noopener">
+      <img src="/assets/img/vinnova.svg"
+           alt="Vinnova logo"
+           style="height: 28px; vertical-align: middle;">
+    </a>
+  </div>
 </div>
+
