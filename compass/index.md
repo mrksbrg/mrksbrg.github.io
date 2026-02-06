@@ -97,6 +97,8 @@ CodeHealth is a code quality metric that aligns with how engineers perceive main
 - **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders [[3]](#ref-techdebt24)
 - **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index** [[1]](#ref-icsme24)
 
+---
+
 ## References
 
 <div class="references">
