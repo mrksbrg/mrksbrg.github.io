@@ -90,7 +90,7 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
 
 ---
 
-## <a id="codehealth"></a>What is CodeHealth™?
+## <a id="codehealth"></a>What Is CodeHealth™ — and Why It Matters to the Business
 CodeHealth is the only code-level maintainability metric with **demonstrated, peer-reviewed business impact**. It is measured on a scale from 1 to 10 and is calibrated to align with how engineers perceive code maintainability. A score of 10 represents code that is free from code smells and easy for humans to read, understand, and evolve. 
 
 Across multiple peer-reviewed studies, we show that higher CodeHealth is associated with outcomes that matter for software-intensive organizations:
