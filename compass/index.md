@@ -23,7 +23,7 @@ title: CodeHealth and Coding Agents
 
 ## Code quality is a prerequisite for successful agent deployment
 
-We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality ([FORGE 2026, arXiv preprint]). Our experiments use the public training set of competitive programming solutions used to train [DeepMind's AlphaCode](https://www.science.org/doi/10.1126/science.abq1158). Across these experiments, LLMs consistently perform better when operating on healthier code.
+We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality ([FORGE 2026]). Our experiments use the public training set of competitive programming solutions used to train [DeepMind's AlphaCode](https://www.science.org/doi/10.1126/science.abq1158). Across these experiments, LLMs consistently perform better when operating on healthier code.
 
 The figure below shows test pass rates as a function of CodeHealth when LLMs are prompted to *improve maintainability in Python files*. For reference, Claude Code pinned to Sonnet 4.5 is shown alongside other models (brown curve). The color of each data point indicates the fraction of refactorings that removed at least one code smell, conditional on passing tests.
 
@@ -42,7 +42,7 @@ The figure below shows test pass rates as a function of CodeHealth when LLMs are
 - **Higher CodeHealth decreases refactoring risk** across all evaluated models.
 - **The trend is consistent across model classes**, from medium-sized open models to state-of-the-art Sonnet 4.5.
 - **As CodeHealth increases, LLMs identify fewer code smells to remove**, reflecting a shift toward more cosmetic changes.
-- **Claude exhibits the most conservative behavior**: the lighter blue markers reveal that many test-passing refactorings involve limited structural change (reported in related work ([MSR 2026, arXiv]))
+- **Claude exhibits the most conservative behavior**: the lighter blue markers reveal that many test-passing refactorings involve limited structural change (reported in related work ([MSR 2026]))
 
 <div class="callout">
   <strong>A healthy codebase substantially increases the likelihood of succesful coding agent deployment.</strong>
@@ -77,9 +77,10 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
 
 ### Takeaways
 
-- **CodeHealth provides a clear optimization direction** for iterative agentic refactoring.
+- **CodeHealth provides a clear optimization target** for iterative agentic refactoring.
 - **Claude maintains a high test pass rate** (≈95%) even while making structural improvements.
-- **The majority of files improve substantially**: around 85% show higher CodeHealth, and roughly 75% reach a healthy state.
+- **In every second file (52%), all code smells are removed**, compared to only 5.7% without CodeHealth guidance.
+- **Most files improve substantially**: more than 90% reach a human- and AI-friendly state, compared to 24.1% without CodeHealth guidance.
 
 ---
 
@@ -87,15 +88,15 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
 
 CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. CodeHealth is a score between 1 and 10 where the top scores represents a file without code smells. Files with a CodeHealth of 9 or higher are considered healthy. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
 - **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion**  
-  ([TechDebt 2022, arXiv])
+  ([TechDebt 2022])
 - **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders  
-  🏆 *Best Paper Award*  ([TechDebt 2024, arXiv])
+  🏆 *Best Paper Award*  ([TechDebt 2024])
 - **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index**  
-  ([ICSME 2024, arXiv])
+  ([ICSME 2024])
 
-[TechDebt 2022, arXiv preprint]: https://arxiv.org/abs/2203.04374
-[TechDebt 2024, arXiv preprint]: https://arxiv.org/abs/2401.13407
-[ICSME 2024, arXiv preprint]: https://arxiv.org/abs/2408.10754v1
+[TechDebt 2022]: https://arxiv.org/abs/2203.04374
+[TechDebt 2024]: https://arxiv.org/abs/2401.13407
+[ICSME 2024]: https://arxiv.org/abs/2408.10754v1
 
 
 ## References
