@@ -16,7 +16,7 @@ title: CodeHealth and Coding Agents
 2. As the volume of code grows, human readability becomes increasingly critical. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- when it matters most.
 
 <div class="callout">
-  <strong><a href="#codehealth">CodeHealth</a> acts as a compass for both humans and coding agents, helping ensure that code remains maintainable over time.</strong>
+  <strong><a href="#codehealth">CodeHealth</a> acts as a compass for both humans and coding agents, safeguarding that code remains maintainable over time.</strong>
 </div>
 
 ---
@@ -27,7 +27,15 @@ We studied refactoring success as a proxy for how effectively AI systems can wor
 
 The figure below shows test pass rates as a function of CodeHealth when LLMs are prompted to *improve maintainability in Python files*. For reference, Claude Code pinned to Sonnet 4.5 is shown alongside other models (brown curve). The color of each data point indicates the fraction of refactorings that removed at least one code smell, conditional on passing tests.
 
-![LLM refactoring success vs. CodeHealth](llm-friendliness_vs_codehealth.png)
+<figure id="fig-llm-codehealth">
+  <img src="llm-friendliness_vs_codehealth.png"
+       alt="Test pass rates versus CodeHealth"
+       style="max-width: 100%; display: block; margin: 1.5em auto;">
+  <figcaption style="font-size: 0.9em; opacity: 0.75; text-align: center;">
+    <strong>Figure 1.</strong>
+    Test pass rates after refactoring as a function of CodeHealth.
+  </figcaption>
+</figure>
 
 ### Takeaways
 
