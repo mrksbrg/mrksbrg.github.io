@@ -23,7 +23,7 @@ title: CodeHealth and Coding Agents
 
 ## Code quality is a prerequisite for successful agent deployment
 
-We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality ([FORGE 2026, arXiv preprint]). Across our experiments, LLMs consistently perform better when operating on healthier code.
+We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality ([FORGE 2026, arXiv preprint]). Our experiments use the public training set of competitive programming solutions used to train [DeepMind's AlphaCode](https://www.science.org/doi/10.1126/science.abq1158). Across these experiments, LLMs consistently perform better when operating on healthier code.
 
 The figure below shows test pass rates as a function of CodeHealth when LLMs are prompted to *improve maintainability in Python files*. For reference, Claude Code pinned to Sonnet 4.5 is shown alongside other models (brown curve). The color of each data point indicates the fraction of refactorings that removed at least one code smell, conditional on passing tests.
 
@@ -117,14 +117,14 @@ CodeHealth is a code quality metric that aligns with how engineers perceive main
     <a href="https://www.lu.se/" target="_blank" rel="noopener">
       <img src="/assets/img/unilund.png"
            alt="Lund University logo"
-           style="height: 42px; vertical-align: middle; margin-right: 16px;">
+           style="height: 54px; vertical-align: middle; margin-right: 16px;">
     </a>
 
     <a href="https://www.vinnova.se/en/p/codehealth-as-the-true-north-for-coding-agents/"
        target="_blank" rel="noopener">
       <img src="/assets/img/vinnova.svg"
            alt="Vinnova logo"
-           style="height: 42px; vertical-align: middle;">
+           style="height: 32px; vertical-align: middle;">
     </a>
   </div>
 </div>
