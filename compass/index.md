@@ -84,7 +84,7 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
 </div>
 
 <p style="margin-top: 1.5em;">
-  The value of using <a href="#codehealth">CodeHealth</a> as a compass also **generalizes to C++ and Java**, supported by large-scale experiments with a self-hosted coding agent and medium-sized LLMs.
+  The value of using CodeHealth as a compass also **generalizes to C++ and Java**, supported by large-scale experiments with a self-hosted coding agent and medium-sized LLMs.
   <a href="/compass/multilang.html">Learn more.</a>
 </p>
 
