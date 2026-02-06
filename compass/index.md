@@ -11,9 +11,9 @@ title: CodeHealth and Coding Agents
 
 **Thesis:** High-quality code has never been more important than in the AI era.
 
-**First,** healthy code is more AI-friendly: it is easier for coding agents to analyze, modify, and extend without introducing unintended side effects.
+1. Healthy code is more AI-friendly: it is easier for coding agents to analyze, modify, and extend without introducing unintended side effects.
 
-**Second,** as the volume of code grows, human readability becomes increasingly critical. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- precisely when it matters most.
+2. As the volume of code grows, human readability becomes increasingly critical. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- when it matters most.
 
 <div class="callout">
   <strong><a href="#codehealth">CodeHealth</a> acts as a compass for both humans and coding agents, helping ensure that code remains maintainable over time.</strong>
@@ -23,7 +23,7 @@ title: CodeHealth and Coding Agents
 
 ## Code quality is a prerequisite for successful agent deployment
 
-We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality ([FORGE 2026, arXiv preprint]). Across our experiments, large language models consistently perform better when operating on healthier code.
+We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality ([FORGE 2026, arXiv preprint]). Across our experiments, LLMs consistently perform better when operating on healthier code.
 
 The figure below shows test pass rates as a function of CodeHealth when LLMs are prompted to *improve maintainability in Python files*. For reference, Claude Code pinned to Sonnet 4.5 is shown alongside other models (brown curve). The color of each data point indicates the fraction of refactorings that removed at least one code smell, conditional on passing tests.
 
@@ -34,7 +34,7 @@ The figure below shows test pass rates as a function of CodeHealth when LLMs are
 - **Higher CodeHealth decreases refactoring risk** across all evaluated models.
 - **The trend is consistent across model classes**, from medium-sized open models to state-of-the-art Sonnet 4.5.
 - **As CodeHealth increases, LLMs identify fewer code smells to remove**, reflecting a shift toward more cosmetic changes.
-- **Claude exhibits the most conservative behavior**: the lighter blue markers reveal that many test-passing refactorings involve limited structural change (reported in related work ([MSR 2026, arXiv PDF]))
+- **Claude exhibits the most conservative behavior**: the lighter blue markers reveal that many test-passing refactorings involve limited structural change (reported in related work ([MSR 2026, arXiv]))
 
 <div class="callout">
   <strong>A healthy codebase substantially increases the likelihood of succesful coding agent deployment.</strong>
@@ -57,15 +57,19 @@ Giving agents access to CodeHealth using the MCP makes wonders.
 
 CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
 - **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion**  
-  ([TechDebt 2022, arXiv preprint])
+  ([TechDebt 2022, arXiv])
 - **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders  
-  🏆 *Best Paper Award*  ([TechDebt 2024, arXiv preprint])
+  🏆 *Best Paper Award*  ([TechDebt 2024, arXiv])
 - **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index**  
-  ([ICSME 2024, arXiv preprint])
+  ([ICSME 2024, arXiv])
 
 [TechDebt 2022, arXiv preprint]: https://arxiv.org/abs/2203.04374
 [TechDebt 2024, arXiv preprint]: https://arxiv.org/abs/2401.13407
 [ICSME 2024, arXiv preprint]: https://arxiv.org/abs/2408.10754v1
+
+
+## References
+
 
 ---
 
