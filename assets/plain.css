@@ -4,12 +4,25 @@ a:hover { text-decoration: underline; }
 /* pick one accent that feels CodeScene-ish */
 a { color: #2F6FED; } /* example: calm blue */
 
-/* Widen content for research pages */
 .plain-page .wrapper {
-  max-width: 1100px;
+  max-width: 1280px;
 }
 
-/* Optional: a bit more breathing room */
 .plain-page {
   line-height: 1.6;
+}
+
+.plain-page hr {
+  margin-top: 2.5em;
+  margin-bottom: 3.5em;
+}
+
+.callout {
+  background-color: #e8f2ff;      /* light, calm blue */
+  border-left: 4px solid #2f6fed; /* subtle accent */
+  padding: 1.2em 1.5em;
+  margin: 2.5em auto;
+  max-width: 1100px;
+  text-align: center;
+  font-size: 1.05em;
 }

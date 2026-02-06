@@ -1,6 +1,6 @@
 ---
 layout: plain
-title: COMPASS
+title: CodeHealth and Coding Agents
 ---
 
 # CodeHealth as a Prerequisite and Compass for Coding Agents
@@ -15,7 +15,11 @@ title: COMPASS
 
 **Second,** as the volume of code grows, human readability becomes increasingly critical. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- precisely when it matters most.
 
-[CodeHealth](#codehealth) acts as a compass for both humans and coding agents, helping ensure that code remains maintainable over time.
+<div class="callout">
+  <strong>[CodeHealth](#codehealth) acts as a compass for both humans and coding agents, helping ensure that code remains maintainable over time.</strong>
+</div>
+
+
 
 ---
 
