@@ -42,7 +42,7 @@ Figure 1 below shows test pass rates as a function of CodeHealth when LLMs are p
 - **Higher CodeHealth decreases refactoring risk** across all evaluated models.
 - **The trend is consistent across model classes**, from medium-sized open models to state-of-the-art Sonnet 4.5.
 - **As CodeHealth increases, LLMs identify fewer code smells to remove**, reflecting a shift toward more cosmetic changes.
-- **Claude exhibits the most conservative behavior**: the lighter blue markers reveal that many test-passing refactorings involve limited structural change (reported in related work [[4]](#ref-msr26))
+- **Claude exhibits the most conservative behavior**: the lighter blue markers reveal that many test-passing refactorings involve limited structural change (reported in related work [[5]](#ref-msr26))
 
 <div class="callout">
   <strong>A healthy codebase substantially increases the likelihood of successful coding agent deployment.</strong>
@@ -91,11 +91,16 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
 ---
 
 ## <a id="codehealth"></a>What is CodeHealth™?
+CodeHealth is the only code-level maintainability metric with **demonstrated, peer-reviewed business impact**. It is measured on a scale from 1 to 10 and is calibrated to align with how engineers perceive code maintainability. A score of 10 represents code that is free from code smells and easy for humans to read, understand, and evolve. 
 
-CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. CodeHealth is a score between 1 and 10 where the top score represents files without code smells. Files with a CodeHealth of 9 or higher are considered healthy. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
-- **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion** [[5]](#ref-techdebt22)
+Across multiple peer-reviewed studies, we show that higher CodeHealth is associated with outcomes that matter for software-intensive organizations:
+
+- **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion** [[6]](#ref-techdebt22)
+- **Newcomers struggle with unhealthy code**, requiring up to **45% more time for small changes** and **93% more time for larger changes** [[4]](#ref-ease23)
 - **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders [[3]](#ref-techdebt24)
 - **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index** [[1]](#ref-icsme24)
+
+In a hybrid future where code is co-developed by both humans and AI, CodeHealth provides **guardrails for agents** and **preserves program comprehension** when human oversight is needed.
 
 ---
 
@@ -122,6 +127,13 @@ CodeHealth is a code quality metric that aligns with how engineers perceive main
       <em>Increasing, not Diminishing: Investigating the Returns of Highly Maintainable Code.</em>
       In Proc. of the 7th Int’l. Conf. on Technical Debt, pp. 21–30, 2024. 
       <a href="https://arxiv.org/pdf/2401.13407">arXiv</a> 🏆 *Best Paper Award* 
+    </li>
+
+    <li id="ref-ease23">
+      Borg, Tornhill, and Mones.
+      <em>U Owns the Code That Changes and How Marginal Owners Resolve Issues Slower in Low-Quality Source Code.</em>
+      In Proc. of the 27th Int’l. Conf. on Evaluation and Assessment in Software Engineering, pp. 368-377, 2023. 
+      <a href="https://arxiv.org/abs/2304.11636">arXiv</a>
     </li>
 
     <li id="ref-msr26">
