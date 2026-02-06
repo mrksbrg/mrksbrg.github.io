@@ -54,16 +54,38 @@ The figure below shows test pass rates as a function of CodeHealth when LLMs are
 ---
 
 ## Coding agents need CodeHealth guidance
+We studied the effect of giving Claude Code access to CodeHealth through our MCP server. As shown in Figure 2, explicit CodeHealth guidance fundamentally changes how capable the agent becomes.
 
-Giving agents access to CodeHealth using the MCP makes wonders.
+The upper plot shows file-level results for Claude corresponding to the brown curve in Figure 1. The lower plot shows the same setup *with* CodeHealth provided as an explicit compass for the agent.
 
-![Uplift from using Claude with CodeHealth compass](claude-mcp.png)
+Each horizontal line represents the **CodeHealth journey of a single file**:
+- **Green** lines indicate files whose CodeHealth improved; line length reflects the magnitude of improvement.
+- **Purple** lines indicate files that reached a perfect CodeHealth score of 10.
+- **Red** lines indicate files whose CodeHealth decreased.
+- **White gaps** correspond to files whose CodeHealth remained unchanged.
+- **Black points** mark refactorings that did not pass the test suite.
+
+<figure id="fig-claude-mcp">
+  <img src="claude-mcp.png"
+       alt="Uplift from using Claude with CodeHealth compass"
+       style="max-width: 100%; display: block; margin: 1.5em auto;">
+  <figcaption style="font-size: 0.9em; opacity: 0.75; text-align: center;">
+    <strong>Figure 2.</strong>
+    Effect of providing Claude Code with CodeHealth guidance via MCP.
+  </figcaption>
+</figure>
+
+### Takeaways
+
+- **CodeHealth provides a clear optimization direction** for iterative agentic refactoring.
+- **Claude maintains a high test pass rate** (≈95%) even while making structural improvements.
+- **The majority of files improve substantially**: around 85% show higher CodeHealth, and roughly 75% reach a healthy state.
 
 ---
 
 ## <a id="codehealth"></a>What is CodeHealth™?
 
-CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
+CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. CodeHealth is a score between 1 and 10 where the top scores represents a file without code smells. Files with a CodeHealth of 9 or higher are considered healthy. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
 - **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion**  
   ([TechDebt 2022, arXiv])
 - **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders  
