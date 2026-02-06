@@ -59,20 +59,20 @@ Giving agents access to CodeHealth using the MCP makes wonders.
     <a href="https://codescene.com/" target="_blank" rel="noopener">
       <img src="/assets/img/codescene.png"
            alt="CodeScene logo"
-           style="height: 28px; vertical-align: middle; margin-right: 16px;">
+           style="height: 60px; vertical-align: middle; margin-right: 16px;">
     </a>
 
     <a href="https://www.lu.se/" target="_blank" rel="noopener">
       <img src="/assets/img/unilund.png"
            alt="Lund University logo"
-           style="height: 28px; vertical-align: middle; margin-right: 16px;">
+           style="height: 60px; vertical-align: middle; margin-right: 16px;">
     </a>
 
     <a href="https://www.vinnova.se/en/p/codehealth-as-the-true-north-for-coding-agents/"
        target="_blank" rel="noopener">
       <img src="/assets/img/vinnova.svg"
            alt="Vinnova logo"
-           style="height: 28px; vertical-align: middle;">
+           style="height: 60px; vertical-align: middle;">
     </a>
   </div>
 </div>
