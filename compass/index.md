@@ -38,7 +38,7 @@ The figure below was an early signal that motivated us to explore this relations
 
 Giving agents access to CodeHealth using the MCP makes wonders.
 
-- Figures
+![Uplift from using Claude with CodeHealth compass](claude-mcp.png)
 
 ---
 
