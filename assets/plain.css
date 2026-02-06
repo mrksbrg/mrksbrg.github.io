@@ -3,3 +3,13 @@ a:hover { text-decoration: underline; }
 
 /* pick one accent that feels CodeScene-ish */
 a { color: #2F6FED; } /* example: calm blue */
+
+/* Widen content for research pages */
+.plain-page .wrapper {
+  max-width: 1100px;
+}
+
+/* Optional: a bit more breathing room */
+.plain-page {
+  line-height: 1.6;
+}
