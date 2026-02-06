@@ -48,3 +48,20 @@ Higher CodeHealth decreases AI risk.
 Giving agents access to CodeHealth using the MCP makes wonders.
 
 - Figures
+
+---
+
+<div style="font-size: 0.85em; opacity: 0.7;">
+  This research was conducted at CodeScene and supported by Vinnova, Sweden’s Innovation Agency.
+  <br/><br/>
+
+  <a href="https://codescene.com/">
+    <img src="/assets/img/codescene.png"
+         alt="CodeScene logo"
+         style="height: 28px; vertical-align: middle; margin-right: 16px;">
+  </a>
+
+  <img src="/assets/img/vinnova.svg"
+       alt="Vinnova logo"
+       style="height: 28px; vertical-align: middle;">
+</div>
