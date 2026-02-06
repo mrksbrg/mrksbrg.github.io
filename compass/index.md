@@ -11,19 +11,19 @@ title: CodeHealth and Coding Agents
 
 **Thesis:** High-quality code has never been more important than in the AI era.
 
-1. Healthy code is more AI-friendly: it is easier for coding agents to analyze, modify, and extend without introducing unintended side effects.
+1. **Healthy code is more AI-friendly**: it is easier for coding agents to analyze, modify, and extend without introducing unintended side effects.
 
-2. As the volume of code grows, human readability becomes increasingly critical. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- when it matters most.
+2. As the volume of code grows, **human readability remains critical**. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- when it matters most.
 
 <div class="callout">
-  <strong><a href="#codehealth">CodeHealth</a> acts as a compass for both humans and coding agents, safeguarding that code remains maintainable over time.</strong>
+  <strong><a href="#codehealth">CodeHealth</a> acts as a compass for both humans and coding agents, guiding code toward sustained maintainability over time.</strong>
 </div>
 
 ---
 
 ## Code quality is a prerequisite for successful agent deployment
 
-We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality [[2]](#ref-forge26)). Our experiments use the public training set of competitive programming solutions used to train [DeepMind's AlphaCode](https://www.science.org/doi/10.1126/science.abq1158). Across these experiments, LLMs consistently perform better when operating on healthier code.
+We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality [[2]](#ref-forge26). Our experiments use the public training set of competitive programming solutions released with [DeepMind's AlphaCode](https://www.science.org/doi/10.1126/science.abq1158). Across these experiments, LLMs consistently perform better when operating on healthier code.
 
 The figure below shows test pass rates as a function of CodeHealth when LLMs are prompted to *improve maintainability in Python files*. For reference, Claude Code pinned to Sonnet 4.5 is shown alongside other models (brown curve). The color of each data point indicates the fraction of refactorings that removed at least one code smell, conditional on passing tests.
 
@@ -45,7 +45,7 @@ The figure below shows test pass rates as a function of CodeHealth when LLMs are
 - **Claude exhibits the most conservative behavior**: the lighter blue markers reveal that many test-passing refactorings involve limited structural change (reported in related work [[4]](#ref-msr26))
 
 <div class="callout">
-  <strong>A healthy codebase substantially increases the likelihood of succesful coding agent deployment.</strong>
+  <strong>A healthy codebase substantially increases the likelihood of successful coding agent deployment.</strong>
 </div>
 
 ---
@@ -79,11 +79,15 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
 - **In every second file (52%), all code smells are removed**, compared to only 5.7% without CodeHealth guidance.
 - **Most files improve substantially**: more than 90% reach a human- and AI-friendly state, compared to 24.1% without CodeHealth guidance.
 
+<div class="callout">
+  <strong>Giving coding agents access to CodeHealth through an MCP server gives them the quality orientation they need.</strong>
+</div>
+
 ---
 
 ## <a id="codehealth"></a>What is CodeHealth™?
 
-CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. CodeHealth is a score between 1 and 10 where the top scores represents a file without code smells. Files with a CodeHealth of 9 or higher are considered healthy. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
+CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. CodeHealth is a score between 1 and 10 where the top score represents files without code smells. Files with a CodeHealth of 9 or higher are considered healthy. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
 - **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion**  
   [[5]](#ref-techdebt22)
 - **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders  
