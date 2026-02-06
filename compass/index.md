@@ -13,7 +13,7 @@ title: CodeHealth and Coding Agents
 
 1. **Healthy code is more AI-friendly**: it is easier for coding agents to analyze, modify, and extend without introducing unintended side effects.
 
-2. As the volume of code grows, **human readability remains critical**. The future will be *hybrid*, and humans will continue to read, review, and reason about code -- when it matters most.
+2. **Human readability remains vital** as the volume of AI-generated code grows. The future will be *hybrid*, and humans will continue to read, review, and reason about code when it matters most.
 
 <div class="callout">
   <strong><a href="#codehealth">CodeHealth</a> acts as a compass for both humans and coding agents, guiding code toward sustained maintainability over time.</strong>
@@ -25,7 +25,7 @@ title: CodeHealth and Coding Agents
 
 We studied refactoring success as a proxy for how effectively AI systems can work with code of varying quality [[2]](#ref-forge26). Our experiments use the public training set of competitive programming solutions released with [DeepMind's AlphaCode](https://www.science.org/doi/10.1126/science.abq1158). Across these experiments, LLMs consistently perform better when operating on healthier code.
 
-The figure below shows test pass rates as a function of CodeHealth when LLMs are prompted to *improve maintainability in Python files*. For reference, Claude Code pinned to Sonnet 4.5 is shown alongside other models (brown curve). The color of each data point indicates the fraction of refactorings that removed at least one code smell, conditional on passing tests.
+Figure 1 below shows test pass rates as a function of CodeHealth when LLMs are prompted to *improve maintainability in Python files*. For reference, Claude Code pinned to Sonnet 4.5 is shown alongside other models (brown curve). The color of each data point indicates the fraction of refactorings that removed at least one code smell, conditional on passing tests.
 
 <figure id="fig-llm-codehealth">
   <img src="llm-friendliness_vs_codehealth.png"
@@ -83,13 +83,18 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
   <strong>Providing coding agents with <a href="#codehealth">CodeHealth</a> via an MCP server gives them a clear quality-oriented direction.</strong>
 </div>
 
+<p style="margin-top: 1.5em;">
+  The value of using <a href="#codehealth">CodeHealth</a> as a compass also generalizes to C++ and Java, supported by large-scale experiments with a self-hosted coding agent and medium-sized LLMs.
+  <a href="/compass/multilang.html">Learn more.</a>
+</p>
+
 ---
 
 ## <a id="codehealth"></a>What is CodeHealth™?
 
 CodeHealth is a code quality metric that aligns with how engineers perceive maintainability. CodeHealth is a score between 1 and 10 where the top score represents files without code smells. Files with a CodeHealth of 9 or higher are considered healthy. Peer-reviewed research shows that higher CodeHealth is associated with outcomes that matter for software-intensive organizations.
 - **Healthy code** is associated with, on average, **15× fewer defects**, **2× faster feature implementation**, and **10× lower uncertainty in task completion** [[5]](#ref-techdebt22)
-- **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders 🏆 *Best Paper Award*  [[3]](#ref-techdebt24)
+- **CodeHealth provides a shared language** for discussing the business impact of code quality with executive stakeholders [[3]](#ref-techdebt24)
 - **CodeHealth outperforms established alternatives**, performing **6× better than SonarQube’s metric** on a public benchmark and outperforming the traditional **Maintainability Index** [[1]](#ref-icsme24)
 
 ## References
@@ -113,8 +118,8 @@ CodeHealth is a code quality metric that aligns with how engineers perceive main
     <li id="ref-techdebt24">
       Borg, Pruvost, Mones, and Tornhill.
       <em>Increasing, not Diminishing: Investigating the Returns of Highly Maintainable Code.</em>
-      In Proc. of the 7th Int’l. Conf. on Technical Debt, pp. 21–30, 2024.
-      <a href="https://arxiv.org/pdf/2401.13407">arXiv</a>
+      In Proc. of the 7th Int’l. Conf. on Technical Debt, pp. 21–30, 2024. 
+      <a href="https://arxiv.org/pdf/2401.13407">arXiv</a> 🏆 *Best Paper Award* 
     </li>
 
     <li id="ref-msr26">
