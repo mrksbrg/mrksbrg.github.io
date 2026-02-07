@@ -123,7 +123,7 @@ In a hybrid future where code is co-developed by both humans and AI, CodeHealth 
       Borg, Pruvost, Mones, and Tornhill.
       <em>Increasing, not Diminishing: Investigating the Returns of Highly Maintainable Code.</em>
       In Proc. of the 7th Int’l. Conf. on Technical Debt, pp. 21–30, 2024. 
-      <a href="https://arxiv.org/pdf/2401.13407">arXiv</a> 🏆 *Best Paper Award* 
+      <a href="https://arxiv.org/pdf/2401.13407">arXiv</a> 🏆 <b>Best Paper Award</b>
     </li>
 
     <li id="ref-ease23">
