@@ -47,7 +47,7 @@ Each horizontal line represents the **CodeHealth journey of a single file**:
        style="max-width: 100%; display: block; margin: 1.5em auto;">
   <figcaption style="font-size: 0.9em; opacity: 0.75; text-align: center;">
     <strong>Figure 2.</strong>
-    Detailed results from refactoring with gptme guided by CodeHealth. Note that the apparent bump in the C++ plot is an effect of the file sampling strategy.
+    Detailed results from refactoring with gptme guided by CodeHealth. Note that the apparent bumps in the C++ and Java plots are effects of the file sampling strategy.
   </figcaption>
 </figure>
 
