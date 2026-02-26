@@ -13,7 +13,6 @@ This page provides supporting evidence that the value of using <a href="/compass
 
 For this series of experiments, we deployed a self-hosted instance of the open-source coding agent [gptme](https://gptme.org/) on infrastructure equipped with NVIDIA A100 GPUs. On the same server, the agent used Qwen3-Coder-30b as the underlying LLM. This is the strongest medium-sized model we have worked with and, critically, it supports *tool calling* and integration with the CodeScene MCP server. For each file, the agent was allowed up to 50 refactoring iterations.
 
-
 ## Test pass rate as a function of CodeHealth
 
 <figure id="fig-gptme-results">
@@ -34,7 +33,7 @@ For this series of experiments, we deployed a self-hosted instance of the open-s
 
 ## File-level refactoring results
 
-Each horizontal line represents the **CodeHealth journey of a single file**:
+Each horizontal line represents the **CodeHealth journey of a single file**, sorted vertically by their original CodeHealth:
 - **Green** lines indicate files whose CodeHealth improved; line length reflects the magnitude of improvement.
 - **Purple** lines indicate files that reached a perfect CodeHealth score of 10.
 - **Red** lines indicate files whose CodeHealth decreased.

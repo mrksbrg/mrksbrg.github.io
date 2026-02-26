@@ -55,7 +55,7 @@ We studied the effect of giving Claude Code access to CodeHealth through our MCP
 
 The upper plot shows file-level results for Claude corresponding to the brown curve in Figure 1. The lower plot shows the same setup *with* CodeHealth provided as an explicit compass for the agent.
 
-Each horizontal line represents the **CodeHealth journey of a single file**:
+Each horizontal line represents the **CodeHealth journey of a single file**, sorted vertically by their original CodeHealth:
 - **Green** lines indicate files whose CodeHealth improved; line length reflects the magnitude of improvement.
 - **Purple** lines indicate files that reached a perfect CodeHealth score of 10.
 - **Red** lines indicate files whose CodeHealth decreased.
